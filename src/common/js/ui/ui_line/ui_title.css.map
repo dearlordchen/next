@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAK,CACH,KAAK,CAAE,GAAG",
+"sources": ["ui_title.scss"],
+"names": [],
+"file": "ui_title.css"
+}

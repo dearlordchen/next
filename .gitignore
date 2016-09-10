@@ -1,0 +1,5 @@
+#忽略dist目录
+/dist/
+#忽略node_modules
+/node_modules/
+npm-debug.log

@@ -1,0 +1,18 @@
+{
+  "static": {
+    "publicPath": "/"
+  },
+  "sftp": {
+    "dev": {
+      "host": "10.133.145.102",
+      "port": "22",
+			"user": "lord",
+			"pass": "lord",
+      "staticRemotePath": "/usr/local/project/htdocs/static/wp/dist/",
+      "ssiRemotePath": "/usr/local/project/htdocs/static/sinclude/wp/"
+    },
+    "beta": {
+
+    }
+  }
+}
