@@ -4,7 +4,7 @@
 ## 如何使用
 1. fork & clone
 2. `npm install`
-3. 在/src下copy demo 重命名为你的项目目录假设为demo1，并且在pages目录下有入口a.js
+3. copy`/src/demo` 重命名为你的项目目录假设为demo1，并且在pages目录下有入口a.js
 4. 进入`/src/demo1` 运行`gulp hot --page=a`,看到下面界面，就可以愉快的写代码了（es6、自定义ui组件、功能组件、scss等都可以在demo中找到，建议参考和理解）
 ![alt](http://km.midea.com/uploads/imgs/900c51096077.png)
 页面url是http://localhost:8081/a.html开发过程是hot-reload，无需刷新，修改代码自动生效
