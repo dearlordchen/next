@@ -1,0 +1,6 @@
+{% for (var lib in o.webpackConfig.libs) { %}
+<script src="//g.mdcdn.cn/wp/dist/lib/{%=o.webpackConfig.libs[lib]%}.js"></script>
+{% } %}
+{% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+<script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+{% } %}

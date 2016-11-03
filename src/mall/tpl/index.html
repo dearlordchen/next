@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>{%=o.webpackConfig.viewName%}</title>
+    <!-- css links -->
+    {% for (var css in o.htmlWebpackPlugin.files.css) { %}
+    <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+    {% } %}
+</head>
+
+<body>
+    <h1 class="page-a">page a</h1>
+    <div id="list"></div>
+    <div id="toast" class="none toast">toast</div>
+    <div id="dialog" class="none dialog">dialog</div>
+    <p><i class="icon-house"></i></p>
+    <p id="logo"></p>
+
+    <!-- js links -->
+    {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+    <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+    {% } %}
+
+</body>
+
+</html>
